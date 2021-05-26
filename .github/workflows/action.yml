@@ -20,8 +20,8 @@ jobs:
         with:
           server_address: smtp.163.com
           server_port: 465
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
+          username: ${{ secrets.MAIL_NAME }}
+          password: ${{ secrets.MAIL_PASS }}
           subject: Shenzhen Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
           to: enderhoshi@gmail.com
